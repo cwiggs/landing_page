@@ -20,7 +20,7 @@
                                         <a href='/'>Home</a>
                                 </li>
                                 <li class='blog'>
-                                        <a href='https://blog.cwiggs.com'>Blog</a>
+                                        <a href='http://blog.cwiggs.com'>Blog</a>
                                 </li>
                                 <li class='resume'>
                                         <a href='/resume.php'>Resume</a>
