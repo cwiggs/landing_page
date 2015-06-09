@@ -1,6 +1,7 @@
 <?php include ('/var/www/cwiggs/includes/header.php')?>
 		<div id='container'>
                         <div id='intro'>
+				<p align="center">This site is a work in progress</p>
                                 <img src='/images/intro.jpg'>
                                 <p>My name is Chris and this is my landing page. This is also a learning project for me, it's my first website after learning HTML/CSS.</p>
                                 <p>A few important things about me are, i'm a<a href='http://en.wikipedia.org/wiki/Skepticism'>skeptic</a>. I'm also a strong advocate of the<a href='http://en.wikipedia.org/wiki/Non-agression_principle'>Non-aggression principle</a>. I'm sure you can deduce from the last two sentences that i'm interested in philosophy. I enjoy discussing philosphy with friends and applying it to my personal life.</p>
