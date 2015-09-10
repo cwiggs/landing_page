@@ -9,11 +9,7 @@
                         <h1 class='title'>
                         Cwiggs
                         </h1>
-                        <h2 class='tagline'>
-                        The Musings of my Internal Mind
-                        </h2>
-                </div>
-                <!--end 'header' div-->
+
                 <div id='nav'>
                         <ul>
                                 <li class='home'>
@@ -24,10 +20,16 @@
                                 </li>
                                 <li class='resume'>
                                         <a href='/resume.php'>Resume</a>
+<!--				<li class='projects'>
+					<a href='/projects.php'>Projects</a> -->
                                 <li class='github'>
                                         <a href='https://github.com/cwiggs'>Github</a>
                                 </li>
                         </ul>
                 </div>
                 <!--end 'nav' div-->
+
+
+                </div>
+                <!--end 'header' div-->
 
