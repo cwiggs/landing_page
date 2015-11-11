@@ -1,5 +1,4 @@
 <?php include ('/var/www/cwiggs/includes/header.php')?>
-		<div id='container'>
                         <div id='intro'>
                                 <img src='/images/me_fountain.jpg' align="right">
 				<h1> Hi, I'm Chris</h1>
@@ -24,16 +23,6 @@
 						</li>
 					</ul>
                         </div>
-                        <!--end 'intro' dev-->
-                        <div id='bike'>
-<!--                                <img src='/images/bike.jpg'> -->
-                        </div>
-                        <!--end 'bike' div-->
-                        <div id='comp'>
-<!--                                <img src='images/comp.png'> -->
-                        </div>
-                        <!--end 'comp' dev-->
-                </div>
-                <!--end 'container' div-->
+			<!-- end 'intro' div-->
 
 <?php include ('/var/www/cwiggs/includes/footer.php')?>

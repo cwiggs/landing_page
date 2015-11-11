@@ -1,34 +1,23 @@
 * {
         font-family: Helvetica;
-	font-size: 20px;
         margin: 10px;
+}
+
+body {
+	background-color: #f2daba;
 }
 
 /*links*/
 a {
 	display: inline;
-}
-a:link {
-        color: #444;
-        text-decoration: none;
-}
-
-a:active {
-        color: #444;
-        text-decoration: none;
-}
-
-a:visited {
         color: #444;
         text-decoration: none;
 }
 
 a:hover {
-/*      color: #141414;*/
         color: #ADD8E6;
-        text-decoration: none;
 }
-
+	
 /*header*/
 #header {
         width:100%;
@@ -37,9 +26,10 @@ a:hover {
 	height: 50px;
         margin: auto;
 	position: relative;
+	background-color: white;
 }
 
-h1 {
+#header h1 {
         color: #444;
         font-weight: bold;
         font-size: 40px;
@@ -49,9 +39,9 @@ h1 {
 #nav {
 	font-size: 20px;
         text-align: right;
-        border-bottom: 1px solid #007fff;
+        border-bottom: 1px solid;
         width: 960px;
-        margin: auto;
+        margin: 10px;
 	position: relative;
 	top: -35px;
 }
@@ -65,7 +55,16 @@ h1 {
         color: #444;
         width: 960px;
         margin: auto;
-	padding: 10px;
+	padding: 5px;
+	background-color: white;
+	overflow: hidden;
+	border-style: solid;
+	border-width: 3px;
+}
+
+#intro {
+	width: 100%;
+	float: left;
 }
 
 /*intro*/
@@ -75,15 +74,36 @@ h1 {
 	text-align: left;
 }
 
-/*bike*/
-
-/*comp*/
-
 /*resume*/
 #resume {
-	margin: auto;
-	position: relative;
-	left: 278px;
+	margin: 5px;	
+}
+
+#resume h2 {
+	text-align: left;
+	font-size: 30px;	
+}
+
+#resume h3 {
+}
+
+#resume ul {
+	font-size: 18px;
+}
+
+#resume p.title {
+	font-style: italic;
+	height: auto;
+	float: left;
+}
+
+#resume p.timeframe {
+	height: auto;
+	float: right;
+}
+
+#resume p.description, ul.description {
+	clear: both;
 }
 
 /*footer*/
@@ -91,8 +111,10 @@ h1 {
         width: 960px;
         text-align: center;
         color: #444;
-        border-top: 1px solid #007fff;
+        border-top: 1px solid;
         margin: auto;
+	clear: both;
+	background-color: white;
 }
 
 
