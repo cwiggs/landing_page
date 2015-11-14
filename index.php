@@ -25,4 +25,11 @@
                         </div>
 			<!-- end 'intro' div-->
 
+			<div id='contact'>
+				<h2> Contact <h2>
+					<p> Email: chrisonline1991 at gmail.com </p>
+					<p> <? $gpg_key = file_get_contents('/var/www/cwiggs/includes/gpg-key.txt'); 
+						#echo $gpg_key; ?> </p>
+
+
 <?php include ('/var/www/cwiggs/includes/footer.php')?>
