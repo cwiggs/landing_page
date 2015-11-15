@@ -12,12 +12,15 @@
 						<li>
 							<p> Open Source Software </p>
 						</li>
+
 						<li>
 							<p> Bicycling </p>
 						</li>
+
 						<li>
 							<p> Technology </p>
 						</li>
+
 						<li>
 							<p> Outdoors </p>
 						</li>

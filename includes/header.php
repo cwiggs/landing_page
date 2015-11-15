@@ -18,13 +18,15 @@
                                 <li class='home'>
                                         <a href='/'>Home</a>
                                 </li>
-<!--                                <li class='blog'>
-                                        <a href='https://blog.cwiggs.com'>Blog</a> -->
-                                </li>
+<!--                            <li class='blog'>
+                                        <a href='https://blog.cwiggs.com'>Blog</a>
+                                </li> -->
                                 <li class='resume'>
                                         <a href='/resume.php'>Resume</a>
+				</li>
 <!--				<li class='projects'>
-					<a href='/projects.php'>Projects</a> -->
+					<a href='/projects.php'>Projects</a>
+				</li> -->
                                 <li class='github'>
                                         <a href='https://github.com/cwiggs'>Github</a>
                                 </li>
