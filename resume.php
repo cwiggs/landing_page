@@ -1,4 +1,5 @@
-<?php include ('/var/www/cwiggs/includes/header.php')?>
+<?php include ('/home/cwiggs/development/landing_page/includes/config.php')?>
+<?php include ( $root.'/includes/header.php')?>
 
 
 	<div id='resume'>
@@ -69,4 +70,4 @@
 	<!-- end 'resume' div -->
 
 	
-<?php include ('/var/www/cwiggs/includes/footer.php')?>
+<?php include ( $root.'/includes/footer.php')?>
