@@ -1,4 +1,4 @@
-<?php include ('/home/cwiggs/development/landing_page/includes/config.php')?>
+<?php include ('/var/www/cwiggs/includes/config.php')?>
 <?php include ( $root.'/includes/header.php')?>
 
                         <div id='intro'>
