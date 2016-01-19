@@ -1,4 +1,5 @@
-<?php include ('/var/www/cwiggs/includes/header.php')?>
+<?php include ('/home/cwiggs/development/landing_page/includes/config.php')?>
+<?php include ( $root.'/includes/header.php')?>
 
                         <div id='intro'>
                                 <img src='/images/me_fountain.jpg' align="right">
@@ -37,4 +38,4 @@
 			</div>
 			<!-- end 'contact' div-->
 
-<?php include ('/var/www/cwiggs/includes/footer.php')?>
+<?php include ( $root.'/includes/footer.php')?>
