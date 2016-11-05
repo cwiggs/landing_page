@@ -1,0 +1,17 @@
+1478971383
+a:2:{s:7:"content";s:794:"<h1>About Me</h1>
+<p>I'm a systems administrator, novice programmer, and philosophy enthusiast.</p>
+<p>I specialize in Linux systems, but I'm procient in Windows 2003-2012 as well as a little bit of OSX. My day to day is baby sitting servers, making sure websites serve correctly, and emails are sending/receiving.  At night you'll find me working on my homelab, various technology that I find interesting, or riding my bicycle around downtown Phoenix.</p>
+<h2>Hobbies</h2>
+<ul>
+<li>Open Source Software</li>
+<li>Bicycling</li>
+<li>Technology</li>
+<li>Outdoors</li>
+</ul>
+<h2>Contact</h2>
+<ul>
+<li>Email: cwiggins at cwiggs.com</li>
+<li>GPG fingerprint: 8777 8154 26B3 3D3E 1739 FFDD 9934 39CD 7F46 F139</li>
+<li>Public SSH Key: <a href="/grav/grav-admin/pub_key.txt">pub_key.txt</a></li>
+</ul>";s:12:"content_meta";N;}

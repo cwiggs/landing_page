@@ -1,0 +1,16 @@
+title: cwiggs
+author:
+  name: 'Chris Wiggins'
+  email: cwiggins@cwiggs.com
+taxonomies:
+  - category
+  - tag
+metadata:
+  description: 'Personal Page for Chris Wiggins'
+summary:
+  enabled: true
+  format: short
+  size: 300
+  delimiter: '==='
+blog:
+  route: /blog

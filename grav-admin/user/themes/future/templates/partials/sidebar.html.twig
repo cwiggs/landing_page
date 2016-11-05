@@ -1,0 +1,88 @@
+<section id="sidebar">
+
+                        <!-- Intro -->
+                            <section id="intro" role="banner">
+                                <a href="{{ base_url_absolute }}" class="logo"><img src="{{ theme_url }}/images/logo.jpg" alt="{{ site.title|upper }}" /></a>
+                                <header>
+                                    <h2>{{ site.title|upper }}</h2>
+                                    <p>Server admin by day, Server admin by night.</p>
+                                </header>
+                            </section>
+
+                            <section role="complementary">
+                                <div class="mini-posts">
+
+                                {% for p in page.find('/blog').children.order('hits', 'desc').slice(0, 2) %}
+                                {% set bannerimage = p.media.images|first %}
+                                    {% if p.header.author %}
+                                    {% set pauthor =  p.header.author %}
+                                    {% else %}
+                                    {% set pauthor =  p.header.taxonomy.author[0] %}
+                                    {% endif %}
+                                    {% if pauthor %}
+                                    {% set pavatar = p.author|replace(' ', '-')|lower %}
+                                    {% endif %}
+
+                                    <!-- Mini Post -->
+                                        <article class="mini-post">
+                                            <header>
+                                                <h3><a href="{{p.url}}">{{ p.title }}</a></h3>
+                                                <time class="published" datetime="{{p.date|date("Y-m-d")}}">{{ p.date|date("M j, Y")}}</time>
+                                                {% if pauthor %}
+                                                <a href="{{ page.url }}" class="author"><img src="{{ theme_url }}/images/{{pavatar}}.jpg" alt="{{ pauthor }}" /></a>
+                                                {% endif %}
+                                            </header>
+                                            <a href="{{p.url}}" class="image">{{ bannerimage.cropZoom(350,175).quality(60) }}</a>                                       
+                                    </article>
+
+   {% endfor %}
+
+</div>
+</section>
+{% if config.plugins.archives.enabled %}
+        {% include 'partials/archives.html.twig' %}
+{% endif %}
+{% if config.plugins.relatedpages.enabled and related_pages|length > 0 %}
+    {% include 'partials/relatedpages.html.twig' %}
+{% endif %}
+{% if config.plugins.random.enabled %}
+<section role="complementary">
+    <ul class="posts">
+    {% for p in page.find('/blog').children.order('random').slice(0, 1) %}
+    {% set bannerimage = p.media.images|first %}
+    <li>
+        <article>
+           <header>
+         <h3><a href="{{p.url}}">{{ p.title }}</a></h3>
+        <time class="published" datetime="{{p.date|date("Y-m-d")}}">{{ p.date|date("M j, Y")}}</time>
+        </header>
+        <a href="{{p.url}}" class="image">{{ bannerimage.cropZoom(64,64).quality(60) }}</a>
+       </article>
+    </li>
+   {% endfor %}
+   </ul>
+</section>
+{% endif %}
+        {% block footer %}
+                            <section class="blurb" role="complementary">
+                                <h2>About</h2>
+                                <p>Systems administrator, novice programmer, and philosophy enthusiast.</p>
+				<p>I specialize in Linux systems, but I'm procient in Windows 2003-2012 as well as a little bit of OSX. My day to day is baby sitting servers, making sure websites serve correctly, and emails are sending/receiving. At night you'll find me working on my homelab, various technology that I find interesting, or riding my bicycle around downtown Phoenix.</p>
+                                <ul class="actions">
+                                    <li><a href="#" class="button">Contact</a></li>
+                                </ul>
+                            </section>
+
+                        <!-- Footer -->
+                            <section id="footer" role="contentinfo">
+                                <ul class="icons">
+                                    <!--<li><a href="#" class="fa-twitter"><span class="label">Twitter</span></a></li>-->
+                                    {% if config.plugins.feed.enabled %}
+                                    <li><a href="{{ feed_url }}.rss" class="fa-rss"><span class="label">RSS</span></a></li>
+                                    {% endif %}
+                                </ul>
+                                <p class="copyright">&copy; {{ "now"|date("Y") }} {{ site.author.name }}. Design: <a href="http://html5up.net">HTML5 UP</a>. Images: <a href="http://unsplash.com">Unsplash</a>.</p>
+                            </section>
+
+                    </section>
+		{% endblock %}
